@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Mountains+of+Christmas:wght@400;700&family=Rubik+Glitch&family=Rubik+Iso&family=Silkscreen:wght@400;700&display=swap');
+
+
+body{
+    background-color:black;
+   
+
+
+}
+@keyframes filtro{
+    0%{filter: none;}
+    100%{filter:blur(4px)}
+} 
+img{
+    position:fixed;
+   margin-top:44%;
+   margin-left:95%;
+   filter:drop-shadow(0 0 0px white);
+   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.164);
+   border-radius:100%;
+   animation:cr 0.4s forwards;
+   animation-name: filtro;
+   animation-duration:0.4s;
+   animation-delay:8s;
+   animation-fill-mode: forwards;
+
+}
+img:hover{
+    animation:ch 0.4s forwards;
+}
+@keyframes ch{
+    0%{
+        width:45px;
+        height:45px;
+        box-shadow: inset 0 0 10px  rgba(255, 255, 255, 0.164);
+    }
+    100%{
+        width:50px;
+        height:50px;
+        box-shadow:  0 0 12px white;
+    }
+}
+.carregar{
+    width:515px;
+    height:500px;
+    background: linear-gradient(to bottom, rgb(58, 57, 57), rgb(25, 25, 25));
+  background-image:url(https://img.freepik.com/vetores-premium/fundo-de-papel-de-parede-de-jogo-hexagono-escuro_92086-863.jpg);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: center center;
+  
+  
+    position:fixed;
+    top: 15%;
+    right: 50%;
+    left:33%;
+    bottom:50%;
+    opacity: 0;
+    border-radius:10%;
+    animation-name: exemplo;
+  animation-duration: 1s  ;
+  animation-delay: 10s; /* Espera 3 segundos antes de iniciar a animação */
+  animation-fill-mode: forwards; /* Mantém o estado final da animação */
+  filter:contrast(110%);
+  z-index:1;
+  box-shadow: 0 0 10px rgb(0, 187, 255);
+  text-align:center;
+  align-content:center;
+  justify-content:center;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  color:white;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 20px;
+  border-top: 15px inset rgb(255, 68, 0);
+  border-bottom: 15px inset rgb(255, 38, 0);
+}
+#nome, #idade{
+    width:50%;
+    height:20px;
+    margin-left:auto;
+    margin-right:auto;
+    border-right: 10px solid rgb(0, 0, 0);
+    border-left: 10px solid rgb(0, 0, 0);
+    border-top:3px solid black;
+    border-bottom: 3px solid black;
+    border-radius:30px;
+
+}
+#nome:focus, #nome:focus{
+   animation: colors 0.5s forwards;
+
+}
+@keyframes colors{
+    0%{background-color: white;  width:50%; height:20px;}
+    20%{background-color:rgb(0, 0, 0);}
+    40%{background-color:rgb(63, 63, 63);}
+    60%{background-color:rgb(119, 119, 120);}
+    80%{background-color:rgb(180, 180, 180)}
+    90%{background-color:yellow;}
+    100%{background-color:white; width:60%; height:30px;}    
+}
+
+@keyframes exemplo{
+  0% { opacity: 0;  box-shadow: 0 0 10px white; }
+  90%{box-shadow: 0 0 10px rgb(255, 255, 255);}
+  100% { opacity: 1; box-shadow: 0 0 60px rgb(255, 0, 0);  }
+}
+
+
+
+@keyframes escondido{
+ 0%{ display:none;}
+ 100%{ display: flex;}
+}
+@keyframes cr{
+    0%{
+        width:50px;
+        height:50px;
+        box-shadow: inset 0 0 12px white;
+    }
+    100%{
+        width:45px;
+        height:45px;
+        box-shadow: inset 0 0 10px  rgba(255, 255, 255, 0.164);
+    }
+}
+h1{
+ font-size:25px;
+ text-shadow: 0 0 20px white;
+}
+
+/*.cima{
+    width:35%;
+    height:20%;
+    background-color:transparent;
+    z-index:10;
+    position:fixed;
+    border-top: 20px inset rgb(0, 247, 255);
+    border-radius:30%;
+    margin-bottom: 50%;
+    margin-left:31.9%;
+    margin-top:23%;
+    
+}
+.baixo{
+    width:35%;
+    height:20%;
+    background-color:transparent;
+    z-index:11;
+    position:fixed;
+    border-top: 20px inset rgb(0, 255, 234);
+    border-radius:30%;
+    margin-top:12.1%;
+    transform:rotate(180deg);
+    margin-left: 31.9%;
+    animation: baixo 1s forwards;
+    animation-delay: 8s;
+    opacity: 0
+}
+@keyframes baixo {
+    0%{ opacity: 0; }
+    10%{ opacity:1; margin-top:12.1%;}
+    100%{ margin-top:30%; opacity:1}
+}
+@keyframes cima {
+    0%{ opacity: 0; }
+    10%{ opacity:1; margin-top:23%;}
+    100%{ margin-top:0%; opacity:1; margin-bottom: 30%;}
+}*/
+
+.sla{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:13px;
+}
+a{
+    color:aqua;
+}
+#conferir{
+    width:15px;
+    height:15px;
+}
+.aceitartd{
+    width:70px;
+    height:30px;
+    background-color:transparent;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:10px;
+    box-shadow: inset 0 0 10px rgb(7, 255, 255);
+    border-radius:10%;
+    border: 1px inset red;
+    color:white;
+    text-shadow: 0 0 10px white;
+
+}
+.aceitartd:hover{
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}

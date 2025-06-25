@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Iceberg&family=Mountains+of+Christmas:wght@400;700&family=Rubik+Glitch&family=Rubik+Iso&family=Silkscreen:wght@400;700&display=swap');
+
+.fundo{
+    background:linear-gradient(to top, black, rgb(9, 9, 72));
+    width:1500px;
+    height:800px;
+    border-radius:none;
+   
+    position:fixed;
+   margin-top:700px;
+   box-shadow:inset 0 0 90px rgb(0, 0, 0), 0 0 90px rgb(0, 0, 0);
+   animation: fundo 4s forwards;
+   animation-delay: 3s;
+   opacity:0
+   
+
+}
+@keyframes fundo{
+0%{opacity:0;}
+100%{opacity:1;}
+}
+body{
+    background-color:black;
+    text-align:center;
+    align-content:center;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.setas{
+    position:fixed;
+    border: 5px inset white;
+    transform:rotate(45deg);
+    background-color:transparent;
+    width:600px;
+    height:600px;
+   margin-bottom:40px;
+    z-index:500;
+    box-shadow:inset 0 0 80px blue, 0 0 80px blue;
+    filter:blur(1px);
+    animation: setas 3s forwards;
+    animation-delay: 3s;
+    opacity:0;
+    
+}
+@keyframes setas {
+    0%{opacity:0; box-shadow:inset 0 0 40px blue, 0 0 40px blue}
+    100%{opacity:1;box-shadow:inset 0 0 80px blue, 0 0 80px blue}
+}
+.titulo{
+    animation: titulo 3s forwards;
+    animation-delay: 6s ;
+    opacity:0;
+}
+@keyframes titulo{
+    0%{opacity:0;}
+    100%{opacity: 1}
+}
+.titulo-embaixo{
+    animation: titulo 3s forwards;
+    animation-delay: 8s ;
+    opacity:0;
+}
+.iniciar{
+    animation: botão 4s infinite;
+    animation-delay: 12s ;
+    opacity:0;
+}
+@keyframes botão{
+    0%{opacity:0}
+    33%{opacity:1}
+    66%{opacity:0}
+    99%{opacity:1}
+    
+}
+.newgame , .game, .settings, .continue, .credits{
+   
+    z-index:2000;
+    background-color:black;
+    border: 1px inset blue;
+    border-radius: 10px;
+    color:lightblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+    box-shadow: 0 0 20px black;
+    text-shadow: 0 0 20px blue;
+    margin-top:5px;
+    margin-bottom:5px;
+    width:150px;
+    height: 35px;
+  
+    
+    
+
+}
+@keyframes auto {
+    0%{display:none;}
+    10%{display:flex;}
+    15%{opacity:0}
+    100%{opacity:1}
+}
+
+.classe1{
+    text-align:center;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    position:fixed;
+    background:linear-gradient(to bottom, rgba(0, 0, 255, 0.461), rgba(0, 0, 0, 0.438));
+    margin-top:960px;
+    padding:40px;
+    width:240px;
+    border-radius:40px;
+    box-shadow: 0 0 40px rgba(0, 0, 255, 0.212);
+    animation: auto 2s forwards;
+    
+    
+
+}
